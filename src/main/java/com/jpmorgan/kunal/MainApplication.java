@@ -53,6 +53,7 @@ public class MainApplication {
                 }
                 try {
                     positionBook.addEvent(event);
+                    System.out.println("Event added.");
                 } catch (InvalidTransactionIDException | NotEnoughBalanceToSellException |
                         InvalidActionException | RepeatedIDException | NoRecordForBuying e) {
                     System.out.println(e.getMessage());
